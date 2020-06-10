@@ -1,4 +1,18 @@
+$color-accent: #9e1290;
+$color-light: desaturate(lighten($color-accent, 50), 30);
+$color-dark: desaturate(darken($color-accent, 20), 10);
+
+html {
+  background-color: $color-light;
+  color: $color-dark;
+
+  a {
+    color: $color-accent;
+  }
+}
+
 body {
+  background-color: $color-light;
   max-width: 500px;
   margin: 0 auto;
 }
