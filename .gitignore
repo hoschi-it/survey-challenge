@@ -1,0 +1,4 @@
+*.swp
+dist
+*.css
+*.css.map

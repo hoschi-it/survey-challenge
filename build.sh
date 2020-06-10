@@ -11,11 +11,11 @@ rm -rf $destination
 mkdir $destination
 
 # compile SASS files
-sass $source/main.scss $source/main.css
+sass $source/main.scss $source/style.css
 
 # deploy html and css
 cp $source/index.html \
-    $source/main.css \
+    $source/style.css \
     $destination/
 
 # deploy javascript

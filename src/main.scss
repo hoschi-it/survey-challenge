@@ -1,0 +1,18 @@
+body {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+
+  * {
+    margin: 10px;
+  }
+
+  h2,
+  p {
+    grid-column: 1 / span 2;
+  }
+}

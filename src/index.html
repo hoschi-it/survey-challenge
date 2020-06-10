@@ -1,16 +1,69 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <title>Title</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-    </head>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-    <body>
+  <body>
+    <header>
+      <h1 id="title">Tell us something :D</h1>
+      <p id="description">We're eager to hear from you.</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <h2>Who are you?</h2>
 
-        <script type="text/javascript" src="tests.js"></script>
-    </body>
+        <label for="gender">Gender</label>
+        <section id="gender">
+          <input id="gender-female" type="radio" name="gender" value="female">
+          <label for="gender-female">Female</label>
+          <input id="gender-male" type="radio" name="gender" value="male">
+          <label for="gender-male">Male</label>
+          <input id="gender-diverse" type="radio" name="gender" value="diverse">
+          <label for="gender-diverse">Other</label>
+        </section>
+
+        <label for="name" id="name-label">Name</label>
+        <input id="name" type="text" placeholder="What's yor name?" required>
+
+        <label for="email" id="email-label">E-Mail</label>
+        <input id="email" type="email" placeholder="What's your email adress?"
+          required>
+
+        <h2>How are you?</h2>
+
+        <p>On a scale from 0 to 10, 10 being best:</p>
+        <label for="number" id="number-label">Mood</label>
+        <input id="number" type="number" min="0" max="10"
+          placeholder="How are you doing?">
+
+        <label for="dropdown" id="dropdown-label">Status</label>
+        <select id="dropdown">
+          <option>Online</option>
+          <option>Overline</option>
+          <option>Underline</option>
+        </select>
+
+        <label for="feelings">Feelings</label>
+        <section id="feelings">
+          <input id="feelings-excited" type="checkbox" value="excited">
+          <label for="feelings-excited">excited</label>
+
+          <input id="feelings-sad" type="checkbox" value="sad">
+          <label for="feelings-sad">sad</label>
+        </section>
+
+
+
+      </form>
+    </main>
+
+
+    <script type="text/javascript" src="tests.js"></script>
+  </body>
 
 </html>
