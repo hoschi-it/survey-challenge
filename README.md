@@ -1,3 +1,6 @@
+# Moved to gitlab
+https://gitlab.com/hoschi-it/survey-challenge
+
 # Requirements
 
 [Source of Challenge (as in 2020-06-08)][challenge]
